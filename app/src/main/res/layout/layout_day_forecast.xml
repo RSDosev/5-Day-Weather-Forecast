@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_day_forecast_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/text_view_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="25.08.2017"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="282.406°F | 282.66°F"
+            android:textColor="@android:color/background_dark" />
+    </LinearLayout>
+
+    <ListView
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:padding="8dp"
+        android:visibility="gone"
+        android:id="@+id/recycle_view_hourly_forecast"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+
+</LinearLayout>
